@@ -255,7 +255,7 @@ title: "快速參考第十"
 
 ## 学习资源
 
-- [快速开始](/usage/quick_start/) - 入门教程
-- [语法详解](/usage/) - 完整语法
-- [语法速查](/usage/syntax_cheatsheet/) - 详细参考
-- [高级特性](/usage/advanced/) - 进阶内容
+- [快速开始](../quick_start/) - 入门教程
+- [语法详解](../) - 完整语法
+- [语法速查](../syntax_cheatsheet/) - 详细参考
+- [高级特性](../advanced/) - 进阶内容

@@ -18,8 +18,8 @@ title: "欢迎！"
 
 ## 建议阅读顺序
 
-1. [认识符咒](/tutorial/01_concepts/)
-2. [运行第一个符咒](/tutorial/02_first_fuzhou/)
-3. [更进一步](/tutorial/03_variables_loops/)
-4. [拓展你的装备](/tutorial/04_advancement_path/)
-5. [常见问题](/tutorial/05_troubleshooting/)
+1. [认识符咒](./01_concepts/)
+2. [运行第一个符咒](./02_first_fuzhou/)
+3. [更进一步](./03_variables_loops/)
+4. [拓展你的装备](./04_advancement_path/)
+5. [常见问题](./05_troubleshooting/)

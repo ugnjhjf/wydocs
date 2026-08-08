@@ -2,28 +2,28 @@
 title: "语法"
 ---
 
-更多详细信息，请参阅 [快速开始](/usage/quick_start/) 指南。
+更多详细信息，请参阅 [快速开始](./quick_start/) 指南。
 
 本项目的语法与原始 [Wenyan](https://github.com/wenyan-lang/wenyan)
 项目的 [语法](https://github.com/wenyan-lang/wenyan/wiki/Syntax-Cheatsheet) 大体相同，两者之间仅存在一些细微的差异。
 
 ## 目录
 
-- [明義第一 - 快速开始](/usage/quick_start/)
-- [變數第二 - 变量声明与赋值](/usage/varible/)
-- [算術第三 - 算术运算](/usage/calculation/)
-- [流程第四 - 控制流](/usage/control/)
-- [方術第五 - 函数定义与调用](/usage/function/)
-- [格物第六 - 对象系统](/usage/object/)
-- [府库第七 - 模块导入](/usage/import/)
-- [進階第八 - 高级特性](/usage/advanced/)
-- [补充说明](/usage/misc/)
-- [語法速查第九 - 完整语法参考](/usage/syntax_cheatsheet/)
-- [快速參考第十 - 快速参考卡](/usage/quick_reference/)
+- [明義第一 - 快速开始](./quick_start/)
+- [變數第二 - 变量声明与赋值](./varible/)
+- [算術第三 - 算术运算](./calculation/)
+- [流程第四 - 控制流](./control/)
+- [方術第五 - 函数定义与调用](./function/)
+- [格物第六 - 对象系统](./object/)
+- [府库第七 - 模块导入](./import/)
+- [進階第八 - 高级特性](./advanced/)
+- [补充说明](./misc/)
+- [語法速查第九 - 完整语法参考](./syntax_cheatsheet/)
+- [快速參考第十 - 快速参考卡](./quick_reference/)
 
 ## 函数
 
-详见 [方術](/usage/function/)
+详见 [方術](./function/)
 
 - 所有运算符（例如 `加`、`減`）已被替换为函数，可以作为函数调用使用。例如：`取三以施加，施加於一以一`。
 - `書` 现在是一个运算符，可以作为普通函数使用，例如 `書一`。
@@ -42,14 +42,14 @@ title: "语法"
 
 ## 类型
 
-详见 [数据类型](/usage/misc/#数据类型)
+详见 [数据类型](./misc/#数据类型)
 
 - 该语言目前是弱类型语言，仅在赋值（例如 `昔之...者 今...是矣`）和函数调用时尝试 cast 值。
 - 当对两种不同类型的值进行加法时，语言会尝试将它们 cast 为兼容类型。
 
 ## 对象
 
-详见 [格物](/usage/object/)
+详见 [格物](./object/)
 
 - 对象定义现在定义了一种类型，可以使用 `造「物」` 或 `施「物」` 调用其构造函数来实例化对象。原始定义对象的方法保留为类的静态变量。
 - 函数可以声明为 `物之「甲」者術....`。
@@ -60,7 +60,7 @@ title: "语法"
 
 ## 高级特性
 
-详见 [進階](/usage/advanced/)
+详见 [進階](./advanced/)
 
 - 异步函数声明与 await 操作
 - 数组的高级操作（充、銜、長）

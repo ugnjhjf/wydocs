@@ -11,7 +11,7 @@ export default defineConfig({
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/gyxx-xc/WenyanNature' },
 			],
 			sidebar: [
-				{ label: '首页', link: '/' },
+				{ label: '首页', slug: 'index' },
 				{
 					label: '演示广场',
 					items: [
