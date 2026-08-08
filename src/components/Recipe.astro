@@ -1,0 +1,79 @@
+---
+interface Props {
+	result: string;
+	items: string[];
+}
+
+const { result, items } = Astro.props;
+
+if (items.length !== 9) {
+	throw new Error(`Recipe requires exactly 9 items, received ${items.length}.`);
+}
+---
+
+<div class="recipe" aria-label={`合成配方：${result}`}>
+	<div class="recipe__grid" role="list" aria-label="三乘三材料网格">
+		{items.map((item) => (
+			<div class:list={["recipe__slot", { "recipe__slot--empty": !item }]} role="listitem">
+				{item ? <code>{item}</code> : <span class="sr-only">空槽</span>}
+			</div>
+		))}
+	</div>
+	<span class="recipe__arrow" aria-hidden="true">→</span>
+	<div class="recipe__result"><code>{result}</code></div>
+</div>
+
+<style>
+	.recipe {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		margin-block: 1.25rem;
+		overflow-x: auto;
+		padding-block: 0.25rem;
+	}
+
+	.recipe__grid {
+		display: grid;
+		flex: 0 0 auto;
+		grid-template-columns: repeat(3, minmax(4.5rem, 1fr));
+		gap: 0.35rem;
+	}
+
+	.recipe__slot,
+	.recipe__result {
+		display: grid;
+		min-width: 4.5rem;
+		min-height: 4.5rem;
+		place-items: center;
+		padding: 0.35rem;
+		border: 1px solid var(--sl-color-gray-5);
+		border-radius: 0.35rem;
+		background: var(--sl-color-gray-6);
+		text-align: center;
+	}
+
+	.recipe__slot--empty {
+		background: transparent;
+	}
+
+	.recipe__result {
+		border-color: var(--sl-color-accent);
+	}
+
+	.recipe__arrow {
+		font-size: 1.75rem;
+	}
+
+	.sr-only {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border: 0;
+	}
+</style>
