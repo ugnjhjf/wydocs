@@ -6,6 +6,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: '吾有一术',
+			customCss: ['./src/styles/landing.css'],
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/gyxx-xc/WenyanNature' },
 			],

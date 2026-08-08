@@ -1,0 +1,66 @@
+---
+title: "吾有一术"
+description: "在 Minecraft 中以文言为咒，编写程序，驱动方块与魔法。"
+template: splash
+hero:
+  title: 方块之间 吾有一术！
+  tagline: 写下文言程序，让符咒、机关与天地万物依你的文字而动。
+  image:
+    file: ./title.png
+    alt: 吾有一术书法标题与符咒
+  actions:
+    - text: 从演示广场开始
+      link: /tutorial/
+      icon: right-arrow
+head:
+  - tag: meta
+    attrs:
+      property: og:title
+      content: 吾有一术｜文言编程魔法
+  - tag: meta
+    attrs:
+      property: og:description
+      content: 在 Minecraft 中以文言为咒，编写程序，驱动方块与魔法。
+  - tag: meta
+    attrs:
+      property: og:image
+      content: https://gyxx-xc.github.io/WenyanNature/og.png
+  - tag: meta
+    attrs:
+      name: twitter:card
+      content: summary_large_image
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+<div class="landing-home">
+
+<h2> 一纸符咒 · 万般变化 </h2>
+
+<div class="spell-demo">
+  <div class="spell-demo__copy">
+    <h3>一段文字，便是一道法术</h3>
+    <p>从奏响音符开始，再逐步加入变量、循环和方块交互。每个例子都可以直接抄入符咒运行。</p>
+    <p></p>
+    <a class="spell-demo__link" href="/demos/01_光影音律/">查看第一个声光法术 →</a>
+  </div>
+  <pre class="spell-demo__code"><code>{`吾嘗觀「奏」之書。
+
+為是四遍。
+    施「奏」之「奏乐」以六。
+    施「奏」之「奏乐」以十。
+    施「奏」之「奏乐」以十三。
+    待二。
+云云。`}</code></pre>
+</div>
+
+## 让我们开始吧！
+<div class="landing-links">
+  <LinkCard title="没有编程经验？" href="/demos/" description="从已有的演示案例快速体验和学习。" />
+  <LinkCard title="快速入门？" href="/tutorial/" description="从概念到完成你的第一个符咒。" />
+  <LinkCard title="进一步了解？" href="/usage/" description="系统了解变量、函数、对象与模块。" />
+</div>
+
+
+
+</div>
