@@ -1,7 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-
+import gruvbox from "starlight-theme-gruvbox";
 export default defineConfig({
 	integrations: [
 		starlight({
@@ -56,6 +56,7 @@ export default defineConfig({
 				{ label: '模块索引', items: [{ autogenerate: { directory: 'modules' } }] },
 				{ label: '进阶内容', items: [{ autogenerate: { directory: 'development' } }] },
 			],
+			plugins: [gruvbox()],
 		}),
 	],
 });
