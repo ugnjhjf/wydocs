@@ -17,11 +17,6 @@ export default defineConfig({
 					items: [
 						'demos',
 						'demos/01_光影音律',
-						'demos/02_点石成金',
-						'demos/03_冰火魔法',
-						'demos/04_时辰之道',
-						'demos/05_手枪',
-						'demos/06_记忆与传承',
 					],
 				},
 				{
@@ -52,8 +47,8 @@ export default defineConfig({
 						'usage/quick_reference',
 					],
 				},
-				{ label: '游戏内容', items: [{ autogenerate: { directory: 'in_game' } }] },
-				{ label: '模块索引', items: [{ autogenerate: { directory: 'modules' } }] },
+				{ label: '功能方块', items: [{ autogenerate: { directory: 'in_game' } }] },
+				{ label: '功能符', items: [{ autogenerate: { directory: 'modules' } }] },
 				{ label: '进阶内容', items: [{ autogenerate: { directory: 'development' } }] },
 			],
 			plugins: [gruvbox()],
