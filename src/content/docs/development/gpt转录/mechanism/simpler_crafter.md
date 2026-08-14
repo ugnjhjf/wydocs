@@ -21,8 +21,8 @@ title: "函数化合成方块（GPT 转录）"
 
 各方块的具体设计参见：
 
-- 熔炉的详细设计见 [`furnace.md`](./furnace.md)。
-- 矿石生成器的详细设计见 [`ore_generator.md`](./ore_generator.md)。
+- 熔炉的详细设计见 [`furnace.md`](../../mechanism/furnace/)。
+- 矿石生成器的详细设计见 [`ore_generator.md`](../../mechanism/ore_generator/)。
 
 ## 总结
 

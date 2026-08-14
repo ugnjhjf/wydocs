@@ -46,5 +46,5 @@ sidebar:
 
 ## 相关页面
 
-- [指令总览（附属）](../../modules/addon_features/) — 全指令速查表
-- [實體符](../../modules/entity/) — 用「近域之实」找到目标实体
+- [指令总览（附属）](../../../modules/addon_features/) — 全指令速查表
+- [實體符](../../../modules/entity/) — 用「近域之实」找到目标实体

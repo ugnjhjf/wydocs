@@ -71,4 +71,4 @@ sidebar:
 
 ## 相关页面
 
-- [指令总览（附属）](../../modules/addon_features/) — 全指令速查表
+- [指令总览（附属）](../../../modules/addon_features/) — 全指令速查表

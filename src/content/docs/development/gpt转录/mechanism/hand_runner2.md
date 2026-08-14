@@ -17,7 +17,7 @@ title: "手持运行器复杂度评估（GPT 转录）"
 - 对执行时间和可用函数施加清晰限制；
 - 提供可直接学习和修改的示例程序。
 
-完整方案参见 [`hand_runer.md`](./hand_runer.md)。
+完整方案参见 [`hand_runer.md`](../../mechanism/hand_runer/)。
 
 ## 原稿说明
 
