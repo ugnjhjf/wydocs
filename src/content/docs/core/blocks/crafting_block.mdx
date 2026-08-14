@@ -1,0 +1,82 @@
+---
+title: "创石"
+---
+
+import Recipe from '../../../../components/Recipe.astro';
+
+:::note
+由 AI 学习源码后生成（未检查）
+:::
+
+**創石**是「以码合成」的核心方块：放入材料后需编写符咒程序解答编程题，答对规定轮数才能产出物品。
+
+## 获取方式
+
+<Recipe result="crafting_block" items={["", "", "", "", "crafting_table", "", "smooth_stone_slab", "smooth_stone_slab", "smooth_stone_slab"]} />
+
+> 物品名省略命名空间：mod 物品为 `wenyan_programming:`，原版物品为 `minecraft:`；`#` 开头为标签（任意匹配物品）。
+
+## 指令
+
+:::tip[模块导入]
+无需导入（模块名置空，指令直接可用）。
+:::
+
+| 指令 | 作用 | 语法 | 示例 | 备注 |
+| --- | --- | --- | --- | --- |
+| 参 | 获取当前谜题的题目参数 | `施「参」` | `施「参」。名之曰「題」。書之。` | 「以码合成」谜题专用 |
+| 書 | 提交答案给判定器（答对若干轮后合成物品） | `書<答案> <答案> …` | `書之。` | 答错进度清零；正确答案轮数达到配方要求即产出物品 |
+
+## 使用方法
+
+1. **布置**：在創石周围 3 格范围内放置[基石](../pedestal/)，把材料放在基石上
+2. **编程**：与創石交互打开编程界面，用 `「参」` 获取题目参数，编写程序计算答案
+3. **提交**：用 `書` 提交答案；成功时会有文字粒子效果
+4. **产出**：全部轮次答对后，物品出现在創石上方
+
+## 以码合成配方
+
+以下物品可通过創石答题产出（`材料`为放入基石的材料，`轮数`为需答对次数）：
+
+| 产出 | 材料 | 题目类型 | 轮数 |
+| --- | --- | --- | --- |
+| 基础符 | paper | PLUS_CHECKER（求「甲」加「乙」） | 8 |
+| 松竹纸 ×4 | paper + bamboo | PLUS_CHECKER | — |
+| 云篆纸 ×4 | feather + paper | CLOUD_PAPER_CHECKER | — |
+| 星辉纸 ×4 | paper + glowstone_dust | STARLIGHT_PAPER_CHECKER | — |
+| 霜华纸 ×4 | snowball + gold_nugget + paper | FROST_PAPER_CHECKER | — |
+| 凤羽纸 ×4 | blaze_powder + feather + paper | PHOENIX_PAPER_CHECKER | — |
+| 龙鳞纸 ×4 | dragon_breath + paper | DRAGON_PAPER_CHECKER | — |
+| 松清墨 ×4 | potion + black_dye | PRINT_CHECKER（输出「「吾有一術」」） | — |
+| 朱砂墨 ×4 | potion + black_dye + redstone | CINNABAR_INK_CHECKER | — |
+| 星光墨 ×4 | potion + black_dye + glowstone_dust | STARLIGHT_INK_CHECKER | — |
+| 月华墨 ×4 | starlight_ink + black_dye | LUNAR_INK_CHECKER | — |
+| 玄武墨 ×4 | enchanted_book + lunar_ink | ARCANE_INK_CHECKER | — |
+| 冥土墨 ×4 | netherite_scrap + arcane_ink | CELESTIAL_INK_CHECKER | — |
+| 一阶符~六阶符 ×2 | 对应纸 + 墨 | HAND_RUNNER_N_CHECKER | 1 |
+| 钻石 | coal ×4 | LABYRINTH_CHECKER（走出提供的迷宫） | — |
+
+:::note
+除 PLUS_CHECKER、PRINT_CHECKER、LABYRINTH_CHECKER 外，多数题目的文案尚为占位文本（源码中为「我也不知道題目是什麼」），游戏内题目以实际为准。
+:::
+
+## 综合案例
+
+:::note[验证状态]
+本案例由文档编写者按总表语法构造，未在游戏内验证。
+:::
+
+已知「甲」「乙」求「甲」加「乙」（PLUS_CHECKER）：
+
+```text
+施「参」。名之曰「甲」。
+施「参」。名之曰「乙」。
+加「甲」以「乙」。書之。
+```
+
+## 相关页面
+
+- [指令总览（本体）](../../programming_features/) — 全指令速查表
+- [基石](../pedestal/) - 用于放置材料的辅助方块
+- [刻印台](../writing_block/) - 用于编辑符咒的方块
+- [螢幕石](../../modules/screen/) - 用于显示信息的方块

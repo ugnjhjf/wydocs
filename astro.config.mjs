@@ -31,6 +31,21 @@ export default defineConfig({
 					],
 				},
 				{
+					label: '吾有一术',
+					items: [
+						{ label: '指令总览', slug: 'core/programming_features' },
+						{ label: '功能方块', items: [{ autogenerate: { directory: 'core/blocks' } }] },
+						{ label: '功能符', items: [{ autogenerate: { directory: 'core/modules' } }] },
+					],
+				},
+				{
+					label: '吾有一术：新秩序',
+					items: [
+						{ label: '指令总览', slug: 'addon/addon_features' },
+						{ label: '功能方块', items: [{ autogenerate: { directory: 'addon/blocks' } }] },
+					],
+				},
+				{
 					label: '文言语法',
 					items: [
 						'usage',
@@ -45,21 +60,6 @@ export default defineConfig({
 						'usage/misc',
 						'usage/syntax_cheatsheet',
 						'usage/quick_reference',
-					],
-				},
-				{
-					label: '吾有一术',
-					items: [
-						{ label: '指令总览', slug: 'programming_features' },
-						{ label: '功能方块', items: [{ autogenerate: { directory: 'in_game' } }] },
-						{ label: '功能符', items: [{ autogenerate: { directory: 'modules' } }] },
-					],
-				},
-				{
-					label: '吾有一术：新秩序',
-					items: [
-						{ label: '指令总览', slug: 'addon_features' },
-						{ label: '功能方块', items: [{ autogenerate: { directory: 'addon_blocks' } }] },
 					],
 				},
 				{ label: '进阶内容', items: [{ autogenerate: { directory: 'development' } }] },
