@@ -2,16 +2,9 @@
 title: "吾有一术：新秩序 · 指令总览"
 ---
 
-# Wenyan Addon 文言指令总览
-
 :::note
 由 AI 学习源码后生成（未检查）
 :::
-
-> 本文档整理 **吾有一术：新秩序（WenyanAddon）** 当前提供给玩家的全部文言指令（功能方块所绑定的文言函数）。
->
-> - 数据来源：WenyanAddon 仓库 `src/main/java/org/wenyan/wenyan_addon/`（`Capabilities.java` 与各 `*Handlers.java`）
-> - 本文档由源码梳理生成，随 Addon 快速迭代可能过期；以 `Capabilities.java` 与各 `*Handlers.java` 为准。
 
 ## 调用约定
 
