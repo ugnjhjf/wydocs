@@ -98,4 +98,4 @@ title: "界面"
 
 - [符咒](../runner_block/) — 界面所属的方块
 - [刻印台](../writing_block/) — 另一种编辑符咒代码的界面
-- [指令总览（本体）](../../modules/programming_features/) — 全指令速查表
+- [指令总览（本体）](../../programming_features/) — 全指令速查表
