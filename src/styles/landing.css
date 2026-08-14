@@ -1,3 +1,8 @@
+:root {
+	/* 加宽内容区，让指令总览等 5 列表格有更多空间，减少长文本换行 */
+	--sl-content-width: 64rem;
+}
+
 @layer starlight.components {
 	.hero img {
 		border-radius: 1rem;
