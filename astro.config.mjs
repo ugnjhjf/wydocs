@@ -47,8 +47,20 @@ export default defineConfig({
 						'usage/quick_reference',
 					],
 				},
-				{ label: '功能方块', items: [{ autogenerate: { directory: 'in_game' } }] },
-				{ label: '功能符', items: [{ autogenerate: { directory: 'modules' } }] },
+				{
+					label: '吾有一术',
+					items: [
+						{ label: '功能方块', items: [{ autogenerate: { directory: 'in_game' } }] },
+						{ label: '功能符', items: [{ autogenerate: { directory: 'modules' } }] },
+					],
+				},
+				{
+					label: '吾有一术：新秩序',
+					items: [
+						{ label: '功能方块', items: [{ autogenerate: { directory: 'addon_blocks' } }] },
+						{ label: '功能符', items: [{ autogenerate: { directory: 'addon_modules' } }] },
+					],
+				},
 				{ label: '进阶内容', items: [{ autogenerate: { directory: 'development' } }] },
 			],
 			plugins: [gruvbox()],

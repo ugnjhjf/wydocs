@@ -42,6 +42,6 @@ sidebar:
 
 ## 相关页面
 
-- [指令总览（附属）](../../../modules/addon_features/) — 全指令速查表
+- [指令总览（附属）](../../../addon_modules/addon_features/) — 全指令速查表
 - [演示一：光影音律](../../../demos/01_光影音律/) — 音符石与粒子石的合奏
 - [粒子石](../particle_block/) — 与音符石搭配演出
